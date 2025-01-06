@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.header {
+    background-color: #4CAF50;
+    padding: 2rem  1rem ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.0);
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo-section img {
+    height: 60px;
+    width: auto;
+  }
+  
+  .logo-text {
+    color: white;
+  }
+  
+  .logo-text h1 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .logo-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  
+  .logo-text .tagline {
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  
+  .main-nav a:hover {
+    opacity: 0.8;
+  }
+  
+  .dropdown {
+    /* position: relative; */
+  }
+  
+  .dropdown i {
+    font-size: 0.8rem;
+  }
+/* docters */
+
+.doctors-section {
+    padding: 4rem 2rem;
+    background-color: hsl(120, 9%, 96%);
+    margin-top: 125px;
+
+  }
+  
+  .doctors-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .doctors-container h2 {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .doctor-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .doctor-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .doctor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .doctor-info {
+    padding: 1.5rem;
+    background: #1a75ff;
+    color: white;
+  }
+  
+  .doctor-info h3 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .doctor-info p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 1024px) {
+    .doctors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .doctors-container h2 {
+        font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .doctors-grid {
+        grid-template-columns: 1fr;
+    }
+  
+    .doctor-image {
+        height: 250px;
+    }
+  }
+  
+  .doctors-actions {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+
+
+  /* footer */
+
+  
+  .footer {
+    margin-top: 0rem;
+    background-color: #1a75ff;
+    color: white;
+    padding: 4rem 2rem 2rem;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20rem;
+  }
+  
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 0.8rem;
+  }
+  
+  .footer-column ul li a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-column ul li a:before {
+    content: "»";
+    color: #4CAF50;
+    margin-right: 0.5rem;
+  }
+  
+  .footer-column ul li a:hover {
+    color: white;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .social-icon:hover {
+    background: white;
+    color: #1a75ff;
+  }
+  
+  .map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 200px;
+  }
+  
+  .contact-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .contact-item i {
+    font-size: 1.5rem;
+    color: #4CAF50;
+  }
+  
+  .contact-info h4 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .contact-info p {
+    margin: 0.3rem 0 0;
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 968px) {
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-bar {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+  
+    .logo {
+        text-align: center;
+    }
+  
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+  
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+
+  /* General Styling */
+
+
+/* Dropdown Styling */
+.dropdown1 {
+    /* position: relative; */
+    display: inline-block;
+}
+
+.dropbtn1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropbtn1:hover {
+    background-color: #45a049;
+}
+
+.dropdown1-content1 {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content1 a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropdown-content1 a:hover {
+    background-color: #f1f1f1;
+}
